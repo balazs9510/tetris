@@ -1,0 +1,5 @@
+<app-board [board]="game.board"></app-board>
+<input type="range" min="10" max="1000" (change)="onSpeedChange()" [value]="speed" [(ngModel)] = "speed">
+<button type="button" (click)="reset()">Reset</button>
+<button type="button"><a href="">Quit</a></button>
+<input (keydown)="onKeydown($event)" hidden #foc>

@@ -1,0 +1,16 @@
+.border {
+  background-color: grey !important;
+}
+
+.cell {
+  width: 30px;
+  height: 30px;
+}
+.hidden {
+  visibility: hidden;
+  width: 0;
+  height: 0;
+}
+.occupied{
+  background-color: red;
+}

@@ -1,0 +1,14 @@
+
+<table>
+    <tbody>
+        @for (row of board.cells; track $index) {
+            <tr>
+            @for (cell of board.cells[$index]; track cell.col) {
+                <td>
+                    <app-cell [cell]="cell"></app-cell>
+                </td>
+            }
+        </tr>
+        }
+    </tbody>
+</table>
